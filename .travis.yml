@@ -1,5 +1,5 @@
-#language: generic 
 sudo: required
+language: generic
 service:
   - docker
 
@@ -8,3 +8,21 @@ before_install:
 
 script:
   - docker run -e CI=true amsainfor/docker-react npm run test -- --coverage
+
+#aws
+#deploy:
+#  provider: elasticbeanstalk
+#  region: 'us-east-1'
+#  app: 'docker'
+#  env: 'docker-env'
+#  bucket_name: 'elasticbeanstalk-us-east-1-923445559289'
+#  bucket_path: 'docker'
+#  on:
+#    branch: master
+
+deploy:
+  provider: azure_web_apps
+  username: AZURE_WA_USERNAME       # If AZURE_WA_USERNAME isn't set
+  password: AZURE_WA_PASSWORD   # If AZURE_WA_PASSWORD isn't set
+  site: AZURE_WA_SITE      # If AZURE_WA_SITE isn't set
+  slot:       # (optional) If AZURE_WA_SLOT isn't set
