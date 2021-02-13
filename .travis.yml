@@ -30,5 +30,3 @@ deploy:
   slot:       # (optional) If AZURE_WA_SLOT isn't set
   on:
    branch: master
-
-   
