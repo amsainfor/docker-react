@@ -22,7 +22,7 @@ script:
 
 deploy:
   provider: azure_web_apps
-  skip_cleanup: true
+#  skip_cleanup: true
   verbose: true
   username: AZURE_WA_USERNAME       # If AZURE_WA_USERNAME isn't set
   password: AZURE_WA_PASSWORD   # If AZURE_WA_PASSWORD isn't set
