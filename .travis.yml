@@ -26,9 +26,9 @@ deploy:
   provider: azure_web_apps
 #  skip_cleanup: true
   verbose: true
-#  username: AZURE_WA_USERNAME       # If AZURE_WA_USERNAME isn't set
-#  password: AZURE_WA_PASSWORD   # If AZURE_WA_PASSWORD isn't set
-#  site: AZURE_WA_SITE      # If AZURE_WA_SITE isn't set
+  username: $AZURE_WA_USERNAME       # If AZURE_WA_USERNAME isn't set
+  password: $AZURE_WA_PASSWORD   # If AZURE_WA_PASSWORD isn't set
+  site: $AZURE_WA_SITE      # If AZURE_WA_SITE isn't set
   slot:       # (optional) If AZURE_WA_SLOT isn't set
   on:
    branch: master
