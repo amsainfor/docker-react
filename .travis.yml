@@ -30,5 +30,7 @@ deploy:
   password: $AZURE_WA_PASSWORD   # If AZURE_WA_PASSWORD isn't set
   site: $AZURE_WA_SITE      # If AZURE_WA_SITE isn't set
   slot:       # (optional) If AZURE_WA_SLOT isn't set
+  skip_cleanup: true
   on:
    branch: master
+
