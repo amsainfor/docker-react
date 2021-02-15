@@ -22,7 +22,7 @@ script:
 #  access_key_id: $AWS_ACCESS_KEY
 #  secret_access_key: $AWS_SECRET_KEY
 
- deploy:
+deploy:
   provider: azure_web_apps
   verbose: true
 #  username: $AZURE_WA_USERNAME       # If AZURE_WA_USERNAME isn't set
