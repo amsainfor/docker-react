@@ -33,7 +33,7 @@ deploy:
 #  on:
 #   branch: master
 
-   - provider: script
-  script: git fetch --unshallow && git push https://$AZURE_WA_USERNAME:$AZURE_WA_PASSWORD@$AZURE_WA_SITE.scm.azurewebsites.net:443/my-new-website.git HEAD:refs/heads/master
-  on: master
+    provider: script
+    script: git fetch --unshallow && git push https://$AZURE_WA_USERNAME:$AZURE_WA_PASSWORD@$AZURE_WA_SITE.scm.azurewebsites.net:443/my-new-website.git HEAD:refs/heads/master
+    on: master
 
